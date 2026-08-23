@@ -8,26 +8,40 @@
 
 .card {
     @include surface-card();
+    @include organic-card();
     @extend %hover-lift;
+    border: none;
 }
 
 .team-card {
     @include surface-card($space-3, $radius-md);
+    @include organic-card();
     @extend %hover-lift;
     display: flex;
     flex-direction: column;
     gap: $space-1;
-    border-top: 4px solid $verde-medio;
+    border: none;
+
+    &:nth-child(even) {
+        @include organic-card($flip: true);
+    }
 }
 
 .work-card {
     @include surface-card($space-3, $radius-md);
+    @include organic-card();
     display: flex;
     flex-direction: column;
     gap: $space-2;
+    border: none;
+
+    &:nth-child(even) {
+        @include organic-card($flip: true);
+    }
 
     &--soon {
         border: 1px dashed $verde-medio;
         background-color: transparent;
+        box-shadow: none;
     }
 }

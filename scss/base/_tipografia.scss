@@ -24,7 +24,7 @@
 }
 
 .hero-subtitle {
-    font-family: $font-display;
+    font-family: $font-body;
     font-style: italic;
     font-weight: 400;
     color: $texto-muted;
@@ -65,7 +65,7 @@
 }
 
 .lead {
-    font-family: $font-display;
+    font-family: $font-body;
     font-size: 1.2rem;
     color: $texto;
     max-width: 62ch;
@@ -73,7 +73,7 @@
 }
 
 .body-text {
-    font-family: $font-display;
+    font-family: $font-body;
     font-size: 1.05rem;
     max-width: 68ch;
     margin: 0 0 $space-3;

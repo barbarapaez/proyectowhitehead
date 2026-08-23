@@ -25,7 +25,20 @@
     padding: $padding;
 }
 
-// --- Marco orgánico tipo hoja (elemento de firma visual) ---
+// --- Tarjeta orgánica: radios asimétricos sutiles + sombra suave,
+// en vez de esquinas parejas y borde plano. $flip alterna la forma
+// para que tarjetas vecinas no se vean idénticas. ---
+@mixin organic-card($flip: false) {
+    box-shadow: 0 14px 30px rgba($verde-oscuro, 0.09);
+
+    @if $flip {
+        border-radius: $radius-sm $radius-lg $radius-sm $radius-lg;
+    } @else {
+        border-radius: $radius-lg $radius-sm $radius-lg $radius-sm;
+    }
+}
+
+// --- Marco orgánico tipo hoja (elemento de firma visual, para imágenes) ---
 // $flip invierte la asimetría, para que dos imágenes vecinas
 // no se vean como copias exactas una de la otra.
 @mixin organic-frame($flip: false) {
