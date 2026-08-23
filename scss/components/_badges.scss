@@ -1,0 +1,32 @@
+@use "sass:color";
+@use "../utilities/variables" as *;
+@use "../utilities/placeholders" as *;
+
+// =========================================================
+// Badges
+// =========================================================
+
+.badge-pais {
+    @extend %badge-base;
+    background-color: rgba($ocre, 0.15);
+    color: color.adjust($ocre, $lightness: -12%);
+    border: 1px solid rgba($ocre, 0.4);
+}
+
+.badge-rol {
+    @extend %badge-base;
+    background-color: rgba($verde-medio, 0.14);
+    color: $verde-oscuro;
+
+    &--director {
+        background-color: rgba($ocre, 0.18);
+        color: color.adjust($ocre, $lightness: -14%);
+    }
+}
+
+.badge-soon {
+    @extend %badge-base;
+    background-color: transparent;
+    border: 1px dashed $verde-medio;
+    color: $verde-medio;
+}

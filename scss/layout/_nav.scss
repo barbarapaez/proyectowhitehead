@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+
+// =========================================================
+// Nav: links de navegación
+// =========================================================
+
+.nav-link {
+    font-family: $font-ui;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: rgba($fondo, 0.8);
+    padding: 0.35rem 0.15rem;
+    margin: 0 $space-1;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+        color: $fondo;
+        border-bottom-color: $ocre;
+    }
+
+    &.active {
+        color: $fondo;
+        border-bottom-color: $ocre;
+        font-weight: 600;
+    }
+}

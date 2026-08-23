@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+// =========================================================
+// Mixins reutilizables
+// =========================================================
+
+// --- Breakpoints (mobile-first) ---
+@mixin tablet {
+    @media (min-width: $bp-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $bp-desktop) {
+        @content;
+    }
+}
+
+// --- Tarjeta base: fondo, borde, radio y padding parametrizable ---
+@mixin surface-card($padding: $space-3, $radius: $radius-lg) {
+    background-color: $superficie;
+    border: 1px solid $borde;
+    border-radius: $radius;
+    padding: $padding;
+}
+
+// --- Marco orgánico tipo hoja (elemento de firma visual) ---
+// $flip invierte la asimetría, para que dos imágenes vecinas
+// no se vean como copias exactas una de la otra.
+@mixin organic-frame($flip: false) {
+    overflow: hidden;
+
+    @if $flip {
+        border-radius: 42% 58% 61% 39% / 46% 40% 60% 54%;
+    } @else {
+        border-radius: 62% 38% 40% 60% / 55% 48% 52% 45%;
+    }
+}

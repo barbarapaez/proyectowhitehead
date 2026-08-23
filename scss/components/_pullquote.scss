@@ -1,0 +1,9 @@
+@use "../utilities/placeholders" as *;
+
+// =========================================================
+// Cita destacada (pull-quote)
+// =========================================================
+
+.pull-quote {
+    @extend %pull-quote;
+}

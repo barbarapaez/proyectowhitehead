@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+// =========================================================
+// Header: navbar de Bootstrap estilada
+// =========================================================
+
+.custom-navbar {
+    background-color: $verde-oscuro;
+    padding: $space-2 $space-3;
+
+    .navbar-brand {
+        font-family: $font-display;
+        font-weight: 700;
+        font-size: 1.15rem;
+        color: $fondo;
+    }
+
+    .navbar-toggler {
+        border: 1px solid rgba($fondo, 0.4);
+        border-radius: $radius-sm;
+
+        &:focus {
+            box-shadow: 0 0 0 3px rgba($ocre, 0.4);
+        }
+    }
+}

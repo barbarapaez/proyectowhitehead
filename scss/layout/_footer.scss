@@ -1,0 +1,45 @@
+@use "../utilities/variables" as *;
+@use "../utilities/placeholders" as *;
+
+// =========================================================
+// Footer
+// =========================================================
+
+.site-footer {
+    background-color: $verde-oscuro;
+    color: rgba($fondo, 0.85);
+    padding: $space-4 $space-3;
+    margin-top: $space-6;
+
+    .footer-inner {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: $space-2;
+    }
+}
+
+.footer-copy {
+    font-family: $font-mono;
+    font-size: 0.78rem;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: $space-3;
+}
+
+.footer-link {
+    @extend %link-transition;
+    font-family: $font-ui;
+    font-size: 0.85rem;
+    border-bottom: 1px solid $ocre;
+
+    &:hover {
+        color: $ocre;
+    }
+}

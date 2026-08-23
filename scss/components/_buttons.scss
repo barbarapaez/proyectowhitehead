@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+
+// =========================================================
+// Botones
+// =========================================================
+
+.btn-proyecto {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-1;
+    font-family: $font-ui;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background-color: $verde-oscuro;
+    color: $fondo;
+    padding: 0.75rem 1.5rem;
+    border-radius: $radius-pill;
+    border: 2px solid $verde-oscuro;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: transparent;
+        color: $verde-oscuro;
+        transform: translateY(-2px);
+    }
+}
+
+.btn-secundario {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-1;
+    font-family: $font-ui;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background-color: transparent;
+    color: $verde-oscuro;
+    padding: 0.75rem 1.5rem;
+    border-radius: $radius-pill;
+    border: 2px solid $verde-medio;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+        background-color: $verde-medio;
+        color: $fondo;
+    }
+}

@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// =========================================================
+// Imágenes: marco orgánico (elemento de firma visual del sitio)
+// =========================================================
+
+.retrato {
+    @include organic-frame();
+    width: 260px;
+    max-width: 70vw;
+    border: 3px solid $verde-medio;
+    animation: growIn 0.8s ease both;
+
+    @include desktop {
+        width: 320px;
+        max-width: 100%;
+    }
+}
+
+.retrato-caption {
+    text-align: center;
+    margin-top: $space-2;
+}
+
+.retrato-flip {
+    @include organic-frame($flip: true);
+}

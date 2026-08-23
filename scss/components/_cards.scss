@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+// =========================================================
+// Cards
+// =========================================================
+
+.card {
+    @include surface-card();
+    @extend %hover-lift;
+}
+
+.team-card {
+    @include surface-card($space-3, $radius-md);
+    @extend %hover-lift;
+    display: flex;
+    flex-direction: column;
+    gap: $space-1;
+    border-top: 4px solid $verde-medio;
+}
+
+.work-card {
+    @include surface-card($space-3, $radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: $space-2;
+
+    &--soon {
+        border: 1px dashed $verde-medio;
+        background-color: transparent;
+    }
+}

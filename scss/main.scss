@@ -1,0 +1,24 @@
+// =========================================================
+// main.scss — único punto de entrada del proyecto PICIFFYH
+// Compila a: ../styles/styles.css
+// =========================================================
+
+@use "utilities/variables" as *;
+@use "utilities/mixins" as *;
+@use "utilities/placeholders" as *;
+
+@use "base/animations";
+@use "base/base";
+@use "base/tipografia";
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+@use "layout/grid";
+
+@use "components/cards";
+@use "components/badges";
+@use "components/buttons";
+@use "components/media";
+@use "components/pullquote";
+@use "components/timeline";

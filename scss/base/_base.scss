@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+
+// =========================================================
+// Reset global y estilos base
+// =========================================================
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $fondo;
+    color: $texto;
+    font-family: $font-display;
+    font-size: 1rem;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

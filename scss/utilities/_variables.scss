@@ -1,0 +1,36 @@
+// =========================================================
+// Variables globales — Proyecto PICIFFYH
+// =========================================================
+
+// --- Colores ---
+$verde-oscuro: #1F3B2C;   // primario: header, footer, títulos
+$verde-medio: #4B7358;    // secundario: bordes, acentos suaves
+$ocre: #B8863B;           // acento: detalles, badges, hover
+$fondo: #EFF3EC;          // fondo de página, verde salvia muy pálido
+$superficie: #FFFFFF;     // tarjetas
+$texto: #16241C;          // texto principal, alto contraste
+$texto-muted: #4A5A4E;    // texto secundario
+$borde: #D9E2D5;          // bordes suaves sobre superficie
+
+// --- Tipografía ---
+$font-display: 'Spectral', serif;      // títulos y cuerpo de lectura larga
+$font-ui: 'IBM Plex Sans', sans-serif; // interfaz: nav, botones, etiquetas
+$font-mono: 'IBM Plex Mono', monospace; // créditos, metadatos, fechas
+
+// --- Bordes (todo redondeado, distintos tamaños según el elemento) ---
+$radius-sm: 8px;
+$radius-md: 14px;
+$radius-lg: 22px;
+$radius-pill: 999px;
+
+// --- Breakpoints ---
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
+// --- Espaciados ---
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 1.5rem;
+$space-4: 2.5rem;
+$space-5: 4rem;
+$space-6: 6rem;
