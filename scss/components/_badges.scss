@@ -8,9 +8,9 @@
 
 .badge-pais {
     @extend %badge-base;
-    background-color: rgba($ocre, 0.15);
-    color: color.adjust($ocre, $lightness: -12%);
-    border: 1px solid rgba($ocre, 0.4);
+    background-color: rgba($verde-medio, 0.16);
+    color: $verde-oscuro;
+    border: 1px solid rgba($verde-medio, 0.5);
 }
 
 .badge-rol {

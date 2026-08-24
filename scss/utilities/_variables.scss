@@ -13,10 +13,10 @@ $texto-muted: #4A5A4E;    // texto secundario
 $borde: #D9E2D5;          // bordes suaves sobre superficie
 
 // --- Tipografía ---
-$font-display: 'Fraunces', serif;     // títulos: curvas suaves y redondeadas
-$font-body: 'Spectral', serif;        // párrafos largos, pensada para lectura
-$font-ui: 'IBM Plex Sans', sans-serif; // interfaz: nav, botones, etiquetas
-$font-mono: 'IBM Plex Mono', monospace; // créditos, metadatos, fechas
+$font-display: 'Poppins', sans-serif;   // títulos e interfaz: sans geométrica y redondeada
+$font-body: 'Nunito', sans-serif;       // párrafos: sans redondeada, cómoda para lectura larga
+$font-ui: 'Poppins', sans-serif;        // nav, botones, etiquetas
+$font-mono: 'IBM Plex Mono', monospace; // créditos y metadatos, uso mínimo
 
 // --- Bordes (todo redondeado, distintos tamaños según el elemento) ---
 $radius-sm: 8px;

@@ -19,27 +19,32 @@
     flex-direction: column;
 }
 
-// --- Hero (mobile-first: apilado; desktop: texto + retrato) ---
+// --- Hero (mobile-first: apilado; desktop: texto + retrato+badge) ---
 .hero {
     display: grid;
     grid-template-areas:
-        "badge"
         "texto"
-        "imagen";
+        "imagen"
+        "badge";
     gap: $space-3;
-    align-items: center;
+    align-items: start;
 
     @include desktop {
         grid-template-columns: 3fr 2fr;
         grid-template-areas:
-            "badge  imagen"
-            "texto  imagen";
+            "texto imagen"
+            "texto badge";
         gap: $space-5;
     }
 }
 
 .hero-badge-slot {
     grid-area: badge;
+    justify-self: center;
+
+    @include desktop {
+        justify-self: end;
+    }
 }
 
 .hero-texto {

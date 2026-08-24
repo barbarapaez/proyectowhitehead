@@ -11,7 +11,7 @@
 }
 
 .pull-quote {
-  font-family: "Spectral", serif;
+  font-family: "Nunito", sans-serif;
   font-style: italic;
   font-size: 1.25rem;
   color: #1F3B2C;
@@ -25,7 +25,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
   padding: 0.3rem 0.9rem;
@@ -55,7 +55,7 @@ html {
 body {
   background-color: #EFF3EC;
   color: #16241C;
-  font-family: "Spectral", serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   overflow-x: hidden;
@@ -78,7 +78,7 @@ a {
 }
 
 .eyebrow {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -88,7 +88,7 @@ a {
 }
 
 .hero-title {
-  font-family: "Fraunces", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #1F3B2C;
   line-height: 1.1;
@@ -97,7 +97,7 @@ a {
 }
 
 .hero-subtitle {
-  font-family: "Spectral", serif;
+  font-family: "Nunito", sans-serif;
   font-style: italic;
   font-weight: 400;
   color: #4A5A4E;
@@ -108,7 +108,7 @@ a {
 }
 
 .section-title {
-  font-family: "Fraunces", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #1F3B2C;
   line-height: 1.2;
@@ -117,7 +117,7 @@ a {
 }
 
 .section-subtitle {
-  font-family: "Fraunces", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #1F3B2C;
   line-height: 1.3;
@@ -129,7 +129,7 @@ a {
 }
 
 .card-title {
-  font-family: "Fraunces", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #1F3B2C;
   font-size: 1.2rem;
@@ -137,7 +137,7 @@ a {
 }
 
 .lead {
-  font-family: "Spectral", serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   color: #16241C;
   max-width: 62ch;
@@ -145,7 +145,7 @@ a {
 }
 
 .body-text {
-  font-family: "Spectral", serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1.05rem;
   max-width: 68ch;
   margin: 0 0 1.5rem;
@@ -165,7 +165,7 @@ a {
   padding: 1rem 1.5rem;
 }
 .custom-navbar .navbar-brand {
-  font-family: "Fraunces", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
   color: #EFF3EC;
@@ -179,7 +179,7 @@ a {
 }
 
 .nav-link {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   color: rgba(239, 243, 236, 0.8);
@@ -226,7 +226,7 @@ a {
 }
 
 .footer-link {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.85rem;
   border-bottom: 1px solid #B8863B;
 }
@@ -250,20 +250,26 @@ a {
 
 .hero {
   display: grid;
-  grid-template-areas: "badge" "texto" "imagen";
+  grid-template-areas: "texto" "imagen" "badge";
   gap: 1.5rem;
-  align-items: center;
+  align-items: start;
 }
 @media (min-width: 1024px) {
   .hero {
     grid-template-columns: 3fr 2fr;
-    grid-template-areas: "badge  imagen" "texto  imagen";
+    grid-template-areas: "texto imagen" "texto badge";
     gap: 4rem;
   }
 }
 
 .hero-badge-slot {
   grid-area: badge;
+  justify-self: center;
+}
+@media (min-width: 1024px) {
+  .hero-badge-slot {
+    justify-self: end;
+  }
 }
 
 .hero-texto {
@@ -357,9 +363,9 @@ a {
 }
 
 .badge-pais {
-  background-color: rgba(184, 134, 59, 0.15);
-  color: rgb(53.9840232389%, 39.3144517066%, 17.3100944081%);
-  border: 1px solid rgba(184, 134, 59, 0.4);
+  background-color: rgba(75, 115, 88, 0.16);
+  color: #1F3B2C;
+  border: 1px solid rgba(75, 115, 88, 0.5);
 }
 
 .badge-rol {
@@ -381,39 +387,44 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   background-color: #1F3B2C;
   color: #EFF3EC;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  border: 2px solid #1F3B2C;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0;
+  border: 1px solid #1F3B2C;
+  outline: 1px solid #4B7358;
+  outline-offset: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease, outline-color 0.2s ease;
 }
 .btn-proyecto:hover {
   background-color: transparent;
   color: #1F3B2C;
-  transform: translateY(-2px);
+  outline-color: #1F3B2C;
 }
 
 .btn-secundario {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   background-color: transparent;
   color: #1F3B2C;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  border: 2px solid #4B7358;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0;
+  border: 1px solid #4B7358;
+  outline: 1px solid #4B7358;
+  outline-offset: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease, outline-color 0.2s ease;
 }
 .btn-secundario:hover {
   background-color: #4B7358;
   color: #EFF3EC;
+  outline-color: #1F3B2C;
 }
 
 .retrato {

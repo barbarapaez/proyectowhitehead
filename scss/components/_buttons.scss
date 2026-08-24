@@ -1,7 +1,8 @@
 @use "../utilities/variables" as *;
 
 // =========================================================
-// Botones
+// Botones: geométricos, esquinas cuadradas, doble línea fina
+// (border + outline con separación, en vez de un solo trazo)
 // =========================================================
 
 .btn-proyecto {
@@ -13,15 +14,17 @@
     font-size: 0.95rem;
     background-color: $verde-oscuro;
     color: $fondo;
-    padding: 0.75rem 1.5rem;
-    border-radius: $radius-pill;
-    border: 2px solid $verde-oscuro;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    padding: 0.85rem 1.75rem;
+    border-radius: 0;
+    border: 1px solid $verde-oscuro;
+    outline: 1px solid $verde-medio;
+    outline-offset: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease, outline-color 0.2s ease;
 
     &:hover {
         background-color: transparent;
         color: $verde-oscuro;
-        transform: translateY(-2px);
+        outline-color: $verde-oscuro;
     }
 }
 
@@ -34,13 +37,16 @@
     font-size: 0.95rem;
     background-color: transparent;
     color: $verde-oscuro;
-    padding: 0.75rem 1.5rem;
-    border-radius: $radius-pill;
-    border: 2px solid $verde-medio;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 0.85rem 1.75rem;
+    border-radius: 0;
+    border: 1px solid $verde-medio;
+    outline: 1px solid $verde-medio;
+    outline-offset: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease, outline-color 0.2s ease;
 
     &:hover {
         background-color: $verde-medio;
         color: $fondo;
+        outline-color: $verde-oscuro;
     }
 }
