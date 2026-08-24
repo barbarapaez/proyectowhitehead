@@ -6,17 +6,6 @@ Sitio del proyecto de investigación "El surgimiento de la metafisica procesual 
 
 (agregar el link una vez desplegado en Vercel o Netlify)
 
-## Pendientes antes de publicar (2 cosas puntuales)
-
-1. **Imagen de Whitehead**: descargar desde
-   https://iiif.wellcomecollection.org/image/V0027330/full/800%2C/0/default.jpg
-   y guardarla como `assets/images/alfred-north-whitehead-retrato.jpg`.
-   Licencia: dominio publico (Public Domain Mark). Credito sugerido: "Alfred North Whitehead. Photograph. Wellcome Collection."
-
-2. **Email de contacto**: en `pages/contacto.html` hay un email de ejemplo
-   (`CAMBIAR-EMAIL-DEL-PROYECTO@ejemplo.com`) que hay que reemplazar por
-   el email real del proyecto antes de publicar.
-
 ## Estructura
 
 ```
